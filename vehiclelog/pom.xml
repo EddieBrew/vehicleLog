@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.vehiclelog</groupId>
+  <artifactId>vehiclelog</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>vehiclelog</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+<dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>5.11.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.7.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.7.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+	<groupId>com.jgoodies</groupId>
+	<artifactId>jgoodies-forms</artifactId>
+	<version>1.8.0</version>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/org.jfree/jcommon  -->
+	<dependency>
+	<groupId>org.jfree</groupId>
+	<artifactId>jcommon</artifactId>
+	<version>1.0.24</version>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/com.toedter/jcalendar  -->
+	<dependency>
+	<groupId>com.toedter</groupId>
+	<artifactId>jcalendar</artifactId>
+	<version>1.4</version>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/org.jfree/jfreechart  -->
+	<dependency>
+	<groupId>org.jfree</groupId>
+	<artifactId>jfreechart</artifactId>
+	<version>1.5.3</version>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/mysql/mysql-connector-java  -->
+	
+	<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+	<dependency>
+	    <groupId>com.mysql</groupId>
+	    <artifactId>mysql-connector-j</artifactId>
+	    <version>8.4.0</version>
+	</dependency>
+
+	
+	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+	<dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>2.11.0</version>
+	</dependency>
+	
+	<dependency>  
+     <groupId>com.fasterxml.jackson.core</groupId>  
+     <artifactId>jackson-databind</artifactId>  
+     <version>2.15.1</version>  
+	</dependency> 
+ 
+ 	<dependency>
+	    <groupId>org.apache.pdfbox</groupId>
+	    <artifactId>pdfbox</artifactId>
+	    <version>1.8.14</version>
+	</dependency>
+    
+    
+    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
